@@ -56,8 +56,12 @@ namespace WazeMaze
             {
                 GameOver();
             }
-        }
 
+            //if (arrow.Bounds.IntersectsWith(Label.Bounds))
+            //{
+            //    GameOver();
+            //}
+        }
 
         private void GameOver()
         {
@@ -65,5 +69,7 @@ namespace WazeMaze
 
             arrow.Location = new Point(48, 43);
         }
+
+
     }
 }
