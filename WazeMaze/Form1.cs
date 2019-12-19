@@ -44,7 +44,7 @@ namespace WazeMaze
                 arrow.Location = new Point(arrow.Location.X, arrow.Location.Y + 4);
             }
 
-            //If the arrow touches the boarders
+            //
             if (topBorder.Bounds.IntersectsWith(arrow.Bounds) || bottomBorder.Bounds.IntersectsWith(arrow.Bounds)
              || leftBorder.Bounds.IntersectsWith(arrow.Bounds) || rightBorder.Bounds.IntersectsWith(arrow.Bounds))
             {
@@ -52,15 +52,32 @@ namespace WazeMaze
             }
 
             if (a1.Bounds.IntersectsWith(arrow.Bounds) || a2.Bounds.IntersectsWith(arrow.Bounds)
-             //|| b1.Bounds.IntersectsWith(arrow.Bounds) || b2.Bounds.IntersectsWith(arrow.Bounds))
+               || a3.Bounds.IntersectsWith(arrow.Bounds) || a4.Bounds.IntersectsWith(arrow.Bounds)
+               || a5.Bounds.IntersectsWith(arrow.Bounds) || a6.Bounds.IntersectsWith(arrow.Bounds)
+               || a7.Bounds.IntersectsWith(arrow.Bounds) || a8.Bounds.IntersectsWith(arrow.Bounds)
+               || a9.Bounds.IntersectsWith(arrow.Bounds) || a10.Bounds.IntersectsWith(arrow.Bounds)
+               || a11.Bounds.IntersectsWith(arrow.Bounds) || a12.Bounds.IntersectsWith(arrow.Bounds)
+               || a13.Bounds.IntersectsWith(arrow.Bounds) || a14.Bounds.IntersectsWith(arrow.Bounds))
+
             {
                 GameOver();
             }
 
-            //if (arrow.Bounds.IntersectsWith(Label.Bounds))
-            //{
-            //    GameOver();
-            //}
+            if (b1.Bounds.IntersectsWith(arrow.Bounds) || b2.Bounds.IntersectsWith(arrow.Bounds)
+               || b3.Bounds.IntersectsWith(arrow.Bounds) || b4.Bounds.IntersectsWith(arrow.Bounds)
+               || b5.Bounds.IntersectsWith(arrow.Bounds) || b6.Bounds.IntersectsWith(arrow.Bounds)
+               || b7.Bounds.IntersectsWith(arrow.Bounds) || b8.Bounds.IntersectsWith(arrow.Bounds)
+               || b9.Bounds.IntersectsWith(arrow.Bounds) || b10.Bounds.IntersectsWith(arrow.Bounds)
+               || b11.Bounds.IntersectsWith(arrow.Bounds) || b12.Bounds.IntersectsWith(arrow.Bounds)
+               || b13.Bounds.IntersectsWith(arrow.Bounds) || b14.Bounds.IntersectsWith(arrow.Bounds)
+               || b15.Bounds.IntersectsWith(arrow.Bounds) || b16.Bounds.IntersectsWith(arrow.Bounds)
+               || b17.Bounds.IntersectsWith(arrow.Bounds) || b18.Bounds.IntersectsWith(arrow.Bounds)
+               || b19.Bounds.IntersectsWith(arrow.Bounds))
+
+            {
+                GameOver();
+            }
+
         }
 
         private void GameOver()
