@@ -68,6 +68,9 @@
             this.b13 = new System.Windows.Forms.Label();
             this.b12 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.PauseBtn = new System.Windows.Forms.Button();
+            this.playBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // a2
@@ -432,11 +435,44 @@
             this.exit.TabIndex = 52;
             this.exit.Text = "EXIT";
             // 
+            // exitBtn
+            // 
+            this.exitBtn.Location = new System.Drawing.Point(549, 618);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(133, 43);
+            this.exitBtn.TabIndex = 55;
+            this.exitBtn.Text = "Quit";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
+            // PauseBtn
+            // 
+            this.PauseBtn.Location = new System.Drawing.Point(341, 618);
+            this.PauseBtn.Name = "PauseBtn";
+            this.PauseBtn.Size = new System.Drawing.Size(133, 43);
+            this.PauseBtn.TabIndex = 56;
+            this.PauseBtn.Text = "Pause Music";
+            this.PauseBtn.UseVisualStyleBackColor = true;
+            this.PauseBtn.Click += new System.EventHandler(this.PauseBtn_Click);
+            // 
+            // playBtn
+            // 
+            this.playBtn.Location = new System.Drawing.Point(132, 618);
+            this.playBtn.Name = "playBtn";
+            this.playBtn.Size = new System.Drawing.Size(133, 43);
+            this.playBtn.TabIndex = 57;
+            this.playBtn.Text = "Play Music";
+            this.playBtn.UseVisualStyleBackColor = true;
+            this.playBtn.Click += new System.EventHandler(this.PlayBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 621);
+            this.ClientSize = new System.Drawing.Size(800, 673);
+            this.Controls.Add(this.playBtn);
+            this.Controls.Add(this.PauseBtn);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.b12);
             this.Controls.Add(this.b13);
@@ -525,6 +561,9 @@
         private System.Windows.Forms.Label b13;
         private System.Windows.Forms.Label b12;
         private System.Windows.Forms.Label exit;
+        private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Button PauseBtn;
+        private System.Windows.Forms.Button playBtn;
     }
 }
 
