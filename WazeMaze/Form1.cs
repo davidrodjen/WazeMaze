@@ -52,7 +52,7 @@ namespace WazeMaze
             }
 
             if (a1.Bounds.IntersectsWith(arrow.Bounds) || a2.Bounds.IntersectsWith(arrow.Bounds)
-             || b1.Bounds.IntersectsWith(arrow.Bounds) || b2.Bounds.IntersectsWith(arrow.Bounds))
+             //|| b1.Bounds.IntersectsWith(arrow.Bounds) || b2.Bounds.IntersectsWith(arrow.Bounds))
             {
                 GameOver();
             }
