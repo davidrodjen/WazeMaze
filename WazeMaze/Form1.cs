@@ -78,6 +78,11 @@ namespace WazeMaze
                 GameOver();
             }
 
+            if (exit.Bounds.IntersectsWith(arrow.Bounds))
+            {
+                NextLevel();
+            }
+
         }
 
         private void GameOver()
@@ -85,6 +90,11 @@ namespace WazeMaze
             MessageBox.Show("You failed, back to the start");
 
             arrow.Location = new Point(48, 43);
+        }
+
+        private void NextLevel()
+        {
+            MessageBox.Show("Congratulations! You have passed");
         }
 
 
