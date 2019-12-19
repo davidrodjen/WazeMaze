@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ParadiseLights.mp3" />
+    <Content Include="ParadiseLights.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

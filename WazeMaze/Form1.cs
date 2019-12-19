@@ -102,7 +102,7 @@ namespace WazeMaze
         {
             SoundPlayer player = new SoundPlayer();
 
-            player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.mp3";
+            player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
             player.Play();
         }
 
@@ -110,7 +110,7 @@ namespace WazeMaze
         {
             SoundPlayer player = new SoundPlayer();
 
-            player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.mp3";
+            player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
 
             player.Stop();
             
