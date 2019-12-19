@@ -32,7 +32,6 @@
             this.a1 = new System.Windows.Forms.Label();
             this.rightBorder = new System.Windows.Forms.Label();
             this.topBorder = new System.Windows.Forms.Label();
-            this.arrow = new System.Windows.Forms.Label();
             this.bottomBorder = new System.Windows.Forms.Label();
             this.leftBorder = new System.Windows.Forms.Label();
             this.b2 = new System.Windows.Forms.Label();
@@ -68,9 +67,10 @@
             this.b13 = new System.Windows.Forms.Label();
             this.b12 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
-            this.exitBtn = new System.Windows.Forms.Button();
-            this.PauseBtn = new System.Windows.Forms.Button();
-            this.playBtn = new System.Windows.Forms.Button();
+            this.arrow = new System.Windows.Forms.Label();
+            this.playBtn = new System.Windows.Forms.Label();
+            this.pauseBtn = new System.Windows.Forms.Label();
+            this.exitBtn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // a2
@@ -108,16 +108,6 @@
             this.topBorder.Size = new System.Drawing.Size(741, 10);
             this.topBorder.TabIndex = 10;
             this.topBorder.Text = "label1";
-            // 
-            // arrow
-            // 
-            this.arrow.AutoSize = true;
-            this.arrow.Font = new System.Drawing.Font("Webdings", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.arrow.Location = new System.Drawing.Point(48, 43);
-            this.arrow.Name = "arrow";
-            this.arrow.Size = new System.Drawing.Size(28, 22);
-            this.arrow.TabIndex = 9;
-            this.arrow.Text = "O";
             // 
             // bottomBorder
             // 
@@ -435,44 +425,61 @@
             this.exit.TabIndex = 52;
             this.exit.Text = "EXIT";
             // 
-            // exitBtn
+            // arrow
             // 
-            this.exitBtn.Location = new System.Drawing.Point(549, 618);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(133, 43);
-            this.exitBtn.TabIndex = 55;
-            this.exitBtn.Text = "Quit";
-            this.exitBtn.UseVisualStyleBackColor = true;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
-            // PauseBtn
-            // 
-            this.PauseBtn.Location = new System.Drawing.Point(341, 618);
-            this.PauseBtn.Name = "PauseBtn";
-            this.PauseBtn.Size = new System.Drawing.Size(133, 43);
-            this.PauseBtn.TabIndex = 56;
-            this.PauseBtn.Text = "Pause Music";
-            this.PauseBtn.UseVisualStyleBackColor = true;
-            this.PauseBtn.Click += new System.EventHandler(this.PauseBtn_Click);
+            this.arrow.AutoSize = true;
+            this.arrow.Font = new System.Drawing.Font("Webdings", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.arrow.Location = new System.Drawing.Point(47, 35);
+            this.arrow.Name = "arrow";
+            this.arrow.Size = new System.Drawing.Size(23, 20);
+            this.arrow.TabIndex = 59;
+            this.arrow.Text = "P";
             // 
             // playBtn
             // 
-            this.playBtn.Location = new System.Drawing.Point(132, 618);
+            this.playBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.playBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.playBtn.Location = new System.Drawing.Point(94, 618);
             this.playBtn.Name = "playBtn";
-            this.playBtn.Size = new System.Drawing.Size(133, 43);
-            this.playBtn.TabIndex = 57;
+            this.playBtn.Size = new System.Drawing.Size(131, 43);
+            this.playBtn.TabIndex = 60;
             this.playBtn.Text = "Play Music";
-            this.playBtn.UseVisualStyleBackColor = true;
+            this.playBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.playBtn.Click += new System.EventHandler(this.PlayBtn_Click);
+            // 
+            // pauseBtn
+            // 
+            this.pauseBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.pauseBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pauseBtn.Location = new System.Drawing.Point(310, 618);
+            this.pauseBtn.Name = "pauseBtn";
+            this.pauseBtn.Size = new System.Drawing.Size(131, 43);
+            this.pauseBtn.TabIndex = 61;
+            this.pauseBtn.Text = "Pause Music";
+            this.pauseBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pauseBtn.Click += new System.EventHandler(this.PauseBtn_Click);
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exitBtn.Location = new System.Drawing.Point(529, 618);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(131, 43);
+            this.exitBtn.TabIndex = 62;
+            this.exitBtn.Text = "Quit";
+            this.exitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.exitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 673);
-            this.Controls.Add(this.playBtn);
-            this.Controls.Add(this.PauseBtn);
             this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.pauseBtn);
+            this.Controls.Add(this.playBtn);
+            this.Controls.Add(this.arrow);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.b12);
             this.Controls.Add(this.b13);
@@ -512,7 +519,6 @@
             this.Controls.Add(this.a1);
             this.Controls.Add(this.rightBorder);
             this.Controls.Add(this.topBorder);
-            this.Controls.Add(this.arrow);
             this.Name = "Form1";
             this.Text = "WazeMaze";
             this.ResumeLayout(false);
@@ -525,7 +531,6 @@
         private System.Windows.Forms.Label a1;
         private System.Windows.Forms.Label rightBorder;
         private System.Windows.Forms.Label topBorder;
-        private System.Windows.Forms.Label arrow;
         private System.Windows.Forms.Label bottomBorder;
         private System.Windows.Forms.Label leftBorder;
         private System.Windows.Forms.Label b2;
@@ -561,9 +566,10 @@
         private System.Windows.Forms.Label b13;
         private System.Windows.Forms.Label b12;
         private System.Windows.Forms.Label exit;
-        private System.Windows.Forms.Button exitBtn;
-        private System.Windows.Forms.Button PauseBtn;
-        private System.Windows.Forms.Button playBtn;
+        private System.Windows.Forms.Label arrow;
+        private System.Windows.Forms.Label playBtn;
+        private System.Windows.Forms.Label pauseBtn;
+        private System.Windows.Forms.Label exitBtn;
     }
 }
 

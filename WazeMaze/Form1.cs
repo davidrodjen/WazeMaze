@@ -17,11 +17,13 @@ namespace WazeMaze
         public Form1()
         {
             InitializeComponent();
-            arrow.Text = "J";
+            arrow.Text = "P";
             arrow.Location = new Point(30, 40);
 
             this.KeyDown += new KeyEventHandler(MainForm_KeyInput);
         }
+
+
 
         public void MainForm_KeyInput(object sender, KeyEventArgs e)
         {
@@ -98,12 +100,37 @@ namespace WazeMaze
             MessageBox.Show("Congratulations! You have passed");
         }
 
+        //private void PlayBtn_Click(object sender, EventArgs e)
+        //{
+        //    SoundPlayer player = new SoundPlayer();
+
+        //    player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
+        //    player.Play();
+        //}
+
+        //private void PauseBtn_Click(object sender, EventArgs e)
+        //{
+        //    SoundPlayer player = new SoundPlayer();
+
+        //    player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
+
+        //    player.Stop();
+            
+        //}
+
+        //private void exitBtn_Click(object sender, EventArgs e)
+        //{
+        //    Close();
+        //}
+
+
         private void PlayBtn_Click(object sender, EventArgs e)
         {
             SoundPlayer player = new SoundPlayer();
 
             player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
             player.Play();
+
         }
 
         private void PauseBtn_Click(object sender, EventArgs e)
@@ -111,15 +138,18 @@ namespace WazeMaze
             SoundPlayer player = new SoundPlayer();
 
             player.SoundLocation = @"D:\SideProjects\MazeWaze\WazeMaze\WazeMaze\WazeMaze\ParadiseLights.wav";
-
             player.Stop();
-            
+
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+
+
+
 
 
         //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
